@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Entlassungsbrief SYSTEM "Entlassungsbrief.dtd">
+<Entlassungsbrief erzeugt_am="2022022708:46" version="3">
+	<Ersteller> Kepler Universitätsklinikum Med Campus Hagenberg - Chirurgische Abteilung </Ersteller>
+	<Empfänger> Ordination Dr. Nixisfix </Empfänger>
+	
+	<Patient svnr="svnr8567240856" geschlecht="männlich" geburtsdatum="19560824">
+		<Titel> Dipl.Ing. Hofrat Ba Ma</Titel>
+		<Vorname> Konrad </Vorname>
+		<Mittelname> Anton </Mittelname>
+		<Nachname> Tneitap </Nachname>
+	</Patient>
+	
+	<Aufenthalt von="20220212" bis="20220224" typ="Stationär">
+		Kepler Universitätsklinikum Med Campus Hagenberg - Chirurgische Abteilung
+	</Aufenthalt>
+	
+	<Inhalt>
+		Sehr geehrte Herr/Frau Kollege(in),
+		Wir danken für die Überweisung Ihres Patienten Herr Tneitap. Bei den Inhalten dieses
+		Entlassungsbriefes handelt es sich um synthetische Mustertexte und keinesfalls um
+		personenbezogene Echtdaten oder realistische Befunde. Das Beispiel veranschaulicht die technischen
+		Möglichkeiten unter Verwendung eines Maximums der erlaubten Optionen.
+	</Inhalt>
+	
+	<Diagnosen>
+		<diagnose typ="M25.46" von="20210111" bis="20220224" Status="abgeschlossen">
+			Meniskus: Empyema gen. sin. post corpus alienum ligneum operat.
+		</diagnose>
+		<diagnose typ="G47.63" von="20190919" Status="offen">
+			Zähneknirschen 
+		</diagnose>
+		<diagnose typ="M54.9" von="20180131" Status="offen">
+			bekannt rezidivierende Rückenschmerzen 
+		</diagnose>
+	</Diagnosen>
+	
+	<Medikation>
+		<Arzneimittel Einnahme="täglich" Dosierung="1-0-1-0 " Diagnose="M25.46" >
+			<Medikament>Diazepam Actavis 10mg Tabletten</Medikament>
+			<Zusatzinformation Start="20220224" Ende="20220314">
+				zum Einnehmen
+			</Zusatzinformation>
+		</Arzneimittel>
+		
+		<Arzneimittel Einnahme="täglich" Dosierung="1-0-0-0" Hinweis="vor dem Frühstück" Diagnose="M25.46" >
+			<Medikament>Zithromax 500 mg Filmtabl.</Medikament>
+			<Zusatzinformation Start="" Ende="">
+				zum Einnehmen
+			</Zusatzinformation>
+		</Arzneimittel>
+		
+		<Arzneimittel Einnahme="täglich " Hinweis="3 x 2 Tropfen">
+			<Medikament>	Nasivin 0,05 % - Nasentropfen</Medikament>
+			<Zusatzinformation>
+				nasal
+			</Zusatzinformation>
+		</Arzneimittel>
+		
+		<Arzneimittel Einnahme="bei Bedarf" Dosierung="1-1-1-0 " Diagnose="M54.9" >
+			<Medikament>	Seractil</Medikament>
+			<Zusatzinformation>
+				zum Einnehmen
+			</Zusatzinformation>
+		</Arzneimittel>
+	</Medikation>
+	
+</Entlassungsbrief>

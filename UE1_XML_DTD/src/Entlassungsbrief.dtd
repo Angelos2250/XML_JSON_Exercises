@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Entlassungsbrief (Ersteller,Empfänger,Patient,Aufenthalt,Inhalt,Diagnosen,Medikation)>
+<!ATTLIST Entlassungsbrief
+			erzeugt_am CDATA #REQUIRED
+			version CDATA #REQUIRED>
+<!ELEMENT Ersteller (#PCDATA)>
+<!ELEMENT Empfänger (#PCDATA)>
+<!ELEMENT Patient (Titel*, Vorname, Mittelname*, Nachname)>
+<!ATTLIST Patient
+			svnr ID #REQUIRED
+			geschlecht (männlich|weiblich|divers) #REQUIRED
+			geburtsdatum CDATA #IMPLIED>
+<!ELEMENT Titel (#PCDATA)> 
+<!ELEMENT Vorname (#PCDATA)> 
+<!ELEMENT Mittelname (#PCDATA)> 
+<!ELEMENT Nachname (#PCDATA)> 
+<!ELEMENT Aufenthalt (#PCDATA)>
+<!ATTLIST Aufenthalt 
+			von CDATA #REQUIRED
+			bis CDATA #REQUIRED
+			typ (Stationär|Pflege) #REQUIRED>
+<!ELEMENT Inhalt (#PCDATA)>
+<!ELEMENT Diagnosen (diagnose+)>
+<!ELEMENT diagnose (#PCDATA)>
+<!ATTLIST diagnose
+			typ ID #REQUIRED
+			von CDATA #REQUIRED
+			bis CDATA #IMPLIED
+			Status (offen|abgeschlossen) #REQUIRED>
+<!ELEMENT Medikation (Arzneimittel+)>
+<!ELEMENT Arzneimittel (Medikament,Zusatzinformation)>
+<!ATTLIST Arzneimittel 
+			 Einnahme CDATA #REQUIRED
+			 Dosierung CDATA #IMPLIED
+			 Hinweis CDATA #IMPLIED
+			 Diagnose IDREF #IMPLIED>
+<!ELEMENT Medikament (#PCDATA)>
+<!ELEMENT Zusatzinformation (#PCDATA)>
+<!ATTLIST Zusatzinformation
+			Start CDATA #IMPLIED
+			Ende CDATA #IMPLIED>
